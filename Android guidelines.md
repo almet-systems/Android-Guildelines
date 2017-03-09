@@ -53,6 +53,7 @@
 #### Color State List.  Ресурсы должны храниться в папке res/color . 
  ```diff  
 + Примеры хороших названий `colorButtonUserName, colorButtonAction`
+
 - Плохое название: `colorRedSelector, colorButton` т.д
 ```
 
