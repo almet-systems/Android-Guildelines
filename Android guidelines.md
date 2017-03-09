@@ -10,11 +10,9 @@
 
 ### 1.2.1 Классы
 
-Activity - `{Name}Activity` (`SignInAcitivity.java`)
-
-Fragment `{Name}Fragment` (`NewsFragment.java`)
-
-Dialog `{Name}Dialog` (`TimeChooseDialog.java`)
+* Activity - `{Name}Activity` (`SignInAcitivity.java`)
+* Fragment `{Name}Fragment` (`NewsFragment.java`)
+* Dialog `{Name}Dialog` (`TimeChooseDialog.java`)
 
 Интерфейсы: должны начинаться с большой буквы I. Пример `IActionListener`, `IPresenter`
 
@@ -40,9 +38,9 @@ Dialog `{Name}Dialog` (`TimeChooseDialog.java`)
 #### Background selector for button :  btn_create_request.xml
 
     Drawable button state: 
--normal state: `btn_create_request_normal.xml`
--pressed state: `btn_create_request_pressed.xml`
-Color
+* normal state: `btn_create_request_normal.xml`
+* pressed state: `btn_create_request_pressed.xml`
+#### Color
 Все названию цветов должны быть в формате color+{где используется}
  ```diff   
 + Правильно:  `colorDefaultText, colorUserName`
@@ -57,23 +55,20 @@ Color
 
 #### String
 
-Все строки должны храниться только в ресурсах, даже если это часть какой-то фразы или окончание слова
+Все строки должны храниться только в ресурсах, даже если это часть какой-то фразы или окончание слова должны начинаться с названия экрана, где они используются и далее через подчеркивание для чего они используются
+ ```diff  
++ Правильное название: `about_title`, `userSettings_emailHint`
 
-Должны начинаться с названия экрана, где они используются и далее через подчеркивание для чего они используются
-
-Правильное название: `about_title`, `userSettings_emailHint`
-
-Неправильное название `aboutText`, `textEmail`
-
+- Неправильное название `aboutText`, `textEmail`
+```
 
 #### Dimensions:
  если dimension используется более чем один раз, то вынесение в ресурсы обязательно. Правила наименования такие же как и для string.
+ ```diff  
++ Правильное название: `about_TitleSize`, `userSettings_emailHintSize`
 
-
-Правильное название: `about_TitleSize`, `userSettings_emailHintSize`
-
-Неправильное название `dimenAboutText`, `textEmailSize`
-
+- Неправильное название `dimenAboutText`, `textEmailSize`
+```
 
 
 #### Style 
@@ -85,7 +80,7 @@ TODO: Найти лучший вариант наименования стиле
 
 
 #### Menu
-    Должны быть в формате menu_{где_используется}
+     Должны быть в формате `menu_{где_используется}`
 
 Пример: `menu_map`, `menu_product_details`. 
 
