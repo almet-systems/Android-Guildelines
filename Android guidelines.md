@@ -33,17 +33,20 @@
 
 #### Png icons
 Названия должны начинаться с `ic_{где используется}`. 
-Пример: `ic_close, ic_copy.`
+Пример: `ic_close`, `ic_copy.`
 
-#### Background selector for button :  btn_create_request.xml
+#### Background selector for button :  
+`btn_create_request.xml`
 
     Drawable button state: 
 * normal state: `btn_create_request_normal.xml`
 * pressed state: `btn_create_request_pressed.xml`
+
 #### Color
 Все названию цветов должны быть в формате color+{где используется}
  ```diff   
 + Правильно:  `colorDefaultText, colorUserName`
+
 - Неправильно: `colorRed, color_brown`
 ```
 
