@@ -38,7 +38,8 @@
 #### Background selector for button :  
 `btn_create_request.xml`
 
-    Drawable button state: 
+ Drawable button state: 
+ 
 * normal state: `btn_create_request_normal.xml`
 * pressed state: `btn_create_request_pressed.xml`
 
