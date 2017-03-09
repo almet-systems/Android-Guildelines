@@ -10,8 +10,10 @@
 
 ### 1.2.1 Классы
 
-Activity - `{Name}Activity` (`SignInAcitivity.java`) 
+Activity - `{Name}Activity` (`SignInAcitivity.java`)
+
 Fragment `{Name}Fragment` (`NewsFragment.java`)
+
 Dialog `{Name}Dialog` (`TimeChooseDialog.java`)
 
 Интерфейсы: должны начинаться с большой буквы I. Пример `IActionListener`, `IPresenter`
@@ -22,7 +24,8 @@ Dialog `{Name}Dialog` (`TimeChooseDialog.java`)
 
 Название для ресурсов должны назначаться исходя из того, где они используются, а не того, как они выглядят
 ```diff
-- `btn_red` -неправильно. 
+- `btn_red` -неправильно
+
 + `btn_delete`- правильно 
 ```
 
