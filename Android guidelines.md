@@ -24,9 +24,9 @@ Dialog `{Name}Dialog` (`TimeChooseDialog.java`)
 
 Название для ресурсов должны назначаться исходя из того, где они используются, а не того, как они выглядят
 ```diff
- `btn_red` -неправильно
+- `btn_red` -неправильно
 
- `btn_delete`- правильно 
++ `btn_delete`- правильно 
 ```
 
 Если одна кнопка (или другой компонент) используется на многих экранах, то можно использовать, например
@@ -44,17 +44,16 @@ Dialog `{Name}Dialog` (`TimeChooseDialog.java`)
 -pressed state: `btn_create_request_pressed.xml`
 Color
 Все названию цветов должны быть в формате color+{где используется}
-    
-Правильно:  `colorDefaultText, colorUserName`
-
-Неправильно: `colorRed, color_brown`
-
+ ```diff   
++ Правильно:  `colorDefaultText, colorUserName`
+- Неправильно: `colorRed, color_brown`
+```
 
 #### Color State List.  Ресурсы должны храниться в папке res/color . 
-
-Примеры хороших названий `colorButtonUserName, colorButtonAction`
-Плохое название: `colorRedSelector, colorButton` т.д
-
+ ```diff  
++ Примеры хороших названий `colorButtonUserName, colorButtonAction`
+- Плохое название: `colorRedSelector, colorButton` т.д
+```
 
 #### String
 
