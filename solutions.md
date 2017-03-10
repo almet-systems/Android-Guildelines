@@ -18,30 +18,24 @@ https://github.com/medyo/Fancybuttons.
 Преимущество библиотеки в том, что она покрывает 99% всех состояний кнопки, которые могут понадобиться и отлично работает с reveal animation для api v21. 
 
 `Проверка разрешений для android 6+`
-
 https://github.com/tbruyelle/RxPermissions 
 
 
 
 `Получение фото из камеры или выбор из галереи (рекомендуемое, но не обязательное)`
-
-[https://github.com/miguelbcr/RxPaparazzo]
+https://github.com/miguelbcr/RxPaparazzo 
 
 Если реализовываете свое решение, то не забывать использовать android.support.v4.content.FileProvider
 
 
 
 
-`База данных:  Realm+Rx для новых проектов`
-
-[https://realm.io/docs/java/latest/]
+`База данных:  Realm+Rx для новых проектов` https://realm.io/docs/java/latest/
 
 
 
 
-`Подключение кастомных шрифтов:`
-
-[https://github.com/chrisjenx/Calligraphy]
+`Подключение кастомных шрифтов:` https://github.com/chrisjenx/Calligraphy
 
 ## License
 
