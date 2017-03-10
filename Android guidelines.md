@@ -1,14 +1,7 @@
-# 1. Гайдлайны по разработке проектов
-
-## 1.1 Структура проекта
+# 1. Гайд по наименования
 
 
-
-## 1.2 Наименование файлов и ресурсов
-
-
-
-### 1.2.1 Классы
+### 1.1 Классы
 
 * Activity - `{Name}Activity` (`SignInAcitivity.java`)
 * Fragment `{Name}Fragment` (`NewsFragment.java`)
@@ -17,7 +10,7 @@
 
 Интерфейсы: должны начинаться с большой буквы I. Пример `IActionListener`, `IPresenter`
 
-### 1.2.2  Ресурсы
+### 1.2  Ресурсы
 
 Названия файлов ресурсов должны быть написанны в нижнем регистре используя подчеркивание для разделения слов
 
@@ -96,7 +89,7 @@ TODO: Найти лучший вариант наименования стиле
 
 Пример: `@+id/menu_copy`, `@+id/menu_edit`
 
-### 1.2.3  Layouts
+### 1.3  Layouts
 
 | Type   | Class Name            |		Example               |
 |--------------| ------------------|-----------------------------|
@@ -106,7 +99,7 @@ TODO: Найти лучший вариант наименования стиле
 | Adapter item |    -      			| `item_contact.xml`  |
 | Embeded item | 	-            		| `include_user_view.xml`               |
 
-### 1.2.4  View's ids
+### 1.4  View's ids
 
 Все имена для компонентов должны начинаться с названий этих компонентов (сокращенных или полных, где это необходимо)+ осмысленное название исходя из назначения в приложении
 
@@ -129,74 +122,11 @@ TODO: Найти лучший вариант наименования стиле
 | AppBar         | `appbar`            | `@+id/appbar`         |
 
 
-# 2 Code guidelines
-
-## 2.1 Java language rules
-
-### 2.2.14 Arguments in Fragments and Activities
-
-Когда данные передаются в `Activity` или `Fragment` через `Intent` или `Bundle`, вы __должны__ создать `public static` метод, который обеспечивает создание подходящего `Fragment` или `Intent`. 
-
-
-В случае `Activity` этот метод называется `getStartIntent()`:
-
-```java
-public static Intent getStartIntent(Context context, User user) {
-	Intent intent = new Intent(context, ThisActivity.class);
-	intent.putParcelableExtra(EXTRA_USER, user);
-	return intent;
-}
-```
-
-Для `Fragment` он называется `newInstance()`:
-
-```java
-public static UserFragment newInstance(User user) {
-	UserFragment fragment = new UserFragment;
-	Bundle args = new Bundle();
-	args.putParcelable(ARGUMENT_USER, user);
-	fragment.setArguments(args)
-	return fragment;
-}
-```
-
-__Важно__: Эти методы должны быть объявлены до метода `onCreate()`.
-
-
-## 2.3 XML правила
-
-### 2.3.1 Используйте "self closing tags"
-
-Когда XML элемент не содержит никакого контента, вы __должны__ использовать "self closing tags". 
-
-Пример:
-
-Правильно
-
-```xml
-<TextView
-	android:id="@+id/textPofile"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content" />
-```
-
-__Неправильно__ :
-
-```xml
-<!-- Не делайте этого! -->
-<TextView
-    android:id="@+id/textProfile"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
-</TextView>
-```
-
-
 
 # License
 
 ```
-Copyright 2015 Ribot Ltd.
+Copyright 2017 Almet-systems Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
