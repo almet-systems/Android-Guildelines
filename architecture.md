@@ -4,7 +4,22 @@
 
 ## 3.1 Структура проекта
 
-## 3.2 Android Data Binding + MVVM FAQ
+## 3.2 Примеры
+
+Пример реализации экрана регистрации с проверкой полей
+Пример реализации экрана списка новостей с отображением их списком
+Пример реализации RecyclerView adapter с Android Data Binding и onClick событий на элементы
+
+
+## Требования
+
+* Обязательно создание BaseActivity, BaseFragment  и наследование от этих классов даже если на данный момент у вас нет общей логики для activity или fragment. 
+
+* Обязательно выносить работу с базой в отдельные классы, чтобы viewModel не знал как устроена база в приложении и в любой момент можно было изменить название поля или тип данных не исследуя весь проект. 
+
+* Все данные в базу должны сохраняться асинхронно и доставаться тоже асинхронно. 
+
+## 3.3 Android Data Binding + MVVM FAQ
 
 ### *  В чем суть MVVM ?
 
@@ -44,10 +59,10 @@ public  String getName(String name){
 	return name+”9999”;
 }
 ```
-# License
+## License
 
 ```
-Copyright 2017 Almet-systems Ltd.
+Copyright 2017 Almet-Systems Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
