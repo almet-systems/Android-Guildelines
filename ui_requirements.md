@@ -38,3 +38,21 @@
 4. Все анимации должны иметь `Interpolator` отличный от `LinearInterpolator` т.е должны происходить с положительным или отрицательным ускорением. 
 
 5. Если часть текста отличается стилем/цветом/размером в пределах одной фразы или строки, то использовать `SpannableString` и не делать несколько `TextView`
+
+# License
+
+```
+Copyright 2017 Almet-systems Ltd.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
