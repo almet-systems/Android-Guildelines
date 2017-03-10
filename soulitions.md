@@ -9,15 +9,16 @@
 Пример реализации
 
 `Для загрузки картинок: Picasso.`
-В том числе для закругленных изображений или круглых изображений [https://github.com/vinc3m1/RoundedImageView].  
+В том числе для закругленных изображений или круглых изображений https://github.com/vinc3m1/RoundedImageView.  
 
-`Для кастомных кнопок` [https://github.com/medyo/Fancybuttons] .
+`Для кастомных кнопок`
+https://github.com/medyo/Fancybuttons .
 Преимущество библиотеки в том, что она покрывает 99% всех состояний кнопки, которые могут понадобиться и отлично работает с reveal animation для api v21. 
 
 `Проверка разрешений для android 6+`
-[https://github.com/tbruyelle/RxPermissions] 
+https://github.com/tbruyelle/RxPermissions 
 
-`Получение фото из камеры или выбор из галереи (рекомендуемое, но не обязательное)
+`Получение фото из камеры или выбор из галереи (рекомендуемое, но не обязательное)`
 [https://github.com/miguelbcr/RxPaparazzo] 
 Если реализовываете свое решение, то не забывать использовать android.support.v4.content.FileProvider
 
