@@ -6,7 +6,7 @@
 
 ![logo]
 
-[logo]: "/images/project_structure.png" "Структура проекта"
+[logo]: images/project_structure.png "Структура проекта"
 
 ## 3.2 Примеры
 
