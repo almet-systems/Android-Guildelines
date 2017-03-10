@@ -5,20 +5,19 @@
 
 1. Все кликабельные элементы должны иметь pressed state, который будет явно показывать пользователю, что данный элемент кликабелен.
 
-⋅⋅*  Для кнопок с непрозрачным background это затемнение или осветление background при нажатии. Для api <21 - просто изменяется цвет на более темный или светлый, для api>21 обязательно использование reveal animation
+ *  Для кнопок с непрозрачным background это затемнение или осветление background при нажатии. Для api <21 - просто изменяется цвет на более темный или светлый, для api>21 обязательно использование reveal animation
 
-⋅⋅* Для кнопок с прозрачным background могут использоваться стандартные стейты.
+ * Для кнопок с прозрачным background могут использоваться стандартные стейты.
 
-⋅⋅⋅Прямоугольный
-```xml
-android:background="?selectableItemBackground"
-```
+  Прямоугольный
+  ```xml
+  android:background="?selectableItemBackground"
+  ```
 
-Овальный
-```xml
-
-android:background="?selectableItemBackgroundBorderless"
-```
+  Овальный
+  ```xml
+  android:background="?selectableItemBackgroundBorderless"
+  ```
 
 2. Состояния экранов
 
