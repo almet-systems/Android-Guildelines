@@ -4,7 +4,7 @@
 
 
 
-## 1.2 Наименование файлов
+## 1.2 Наименование файлов и ресурсов
 
 
 
@@ -85,7 +85,8 @@ TODO: Найти лучший вариант наименования стиле
 
 
 #### Menu
-     Должны быть в формате `menu_{где_используется}`
+
+Должны быть в формате `menu_{где_используется}`
 
 Пример: `menu_map`, `menu_product_details`. 
 
@@ -93,6 +94,38 @@ TODO: Найти лучший вариант наименования стиле
 Названия id для пунктов menu должны быть в след. формате: `@+id/menu_{назначение}`
 
 Пример: `@+id/menu_copy`, `@+id/menu_edit`
+
+### 1.2.3  Layouts
+
+| Type   | Class Name            |		Example               |
+|--------------| ------------------|-----------------------------|
+| Activity   | `MainActivity.java`             | `activity_main.xml`          |
+| Fragment       | `MainFragment.java`	            | `fragment_main.xml`    |
+| Dialog       | `DatePickerDialog.java`         | `dialog_date_picker.xml`|
+| Adapter item |    -      			| `item_contact.xml`  |
+| Embeded item | 	-            		| `include_user_view.xml`               |
+
+### 1.2.3  View's ids
+
+Все имена для компонентов должны начинаться с названий этих компонентов (сокращенных или полных, где это необходимо)+ осмысленное название исходя из назначения в приложении
+
+Вот примеры для самых используемых компонентов
+
+
+| Component   | Prefix            |		Example               |
+|--------------| ------------------|-----------------------------|
+| TextView   | `text`             | ` @+id/textName`          |
+| EditText       | `edit`	            | `@+id/editAddress`    |
+| ImageView       | `image`         | `@+id/imageAvatar`          |
+| Button      | `button`        | `@+id/buttonCreateRequest`  |
+| RecyclerView         | `recyclerView`	            | `@+id/recyclerViewContacts`               |
+| ViewPager         | `viewPager	`           | `@+id/viewPagerCards`     |
+| Checkbox         | `checkbox`            | `@+id/checkboxGender`         |
+| RadioButton         | `radio`            | `@+id/radioGender`         |
+| LinearLayout         | `linear`            | `@+id/linearCardsContainer`         |
+| RelativeLayout         | `relative`            | `@+id/relativeCardsContainer`         |
+| Toolbar         | `toolbar`            | `@+id/toolbar`         |
+| AppBar         | `appbar`            | `@+id/appbar`         |
 
 
 #### 1.2.2.1 Drawable files
